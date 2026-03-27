@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patel | Personal Website</title>
+  <meta name="description" content="Simple and elegant personal website." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #edf2ff;
+      --muted: #b9c3e6;
+      --accent: #7c9cff;
+      --accent-2: #9bffd8;
+      --ring: rgba(124, 156, 255, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1000px 500px at 10% -20%, #1f2f6b 0%, transparent 60%),
+        radial-gradient(900px 400px at 90% 0%, #16404d 0%, transparent 60%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      padding: 2.2rem;
+      border-radius: 18px;
+      background: var(--card);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 0.8rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--accent-2);
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 0.8rem;
+    }
+
+    .name {
+      color: var(--accent);
+    }
+
+    p {
+      max-width: 62ch;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 0.68rem 1rem;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #0a1130;
+    }
+
+    .btn.secondary {
+      border-color: rgba(255, 255, 255, 0.28);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 4px var(--ring);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      list-style: none;
+    }
+
+    li {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      padding: 0.28rem 0.72rem;
+      color: #d7dfff;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 1.6rem;
+      color: #9aa7d6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="tag">Welcome</span>
+    <h1>Hi, I'm <span class="name">Akhil Patel</span>.</h1>
+    <p>
+      I build clean digital experiences and modern web projects. This is a simple, elegant
+      landing page you can now use as your website starter and customize in Cursor.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="#">View Projects</a>
+      <a class="btn secondary" href="#">Contact Me</a>
+    </div>
+
+    <ul>
+      <li>Frontend</li>
+      <li>UI/UX</li>
+      <li>JavaScript</li>
+      <li>Performance</li>
+    </ul>
+
+    <footer>Built with HTML + CSS. Ready to deploy.</footer>
+  </main>
+</body>
+</html>
